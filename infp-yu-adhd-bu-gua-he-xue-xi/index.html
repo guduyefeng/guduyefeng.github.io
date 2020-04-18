@@ -1,98 +1,102 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
+    
+<meta charset="utf-8" >
 
 <title>INFP与ADHD不适合学习？ | 孤独夜风</title>
 <meta name="description" content="我是ADHD与INFP，我在这个博客会写些我的真实想法，如果你喜欢，可以常来看看，如果你可以翻墙的话。">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://bigthings.space/favicon.ico?v=1587228435475">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<link rel="shortcut icon" href="https://bigthings.space/favicon.ico?v=1587228477135">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://bigthings.space/styles/main.css">
 
 
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-  
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://bigthings.space">孤独夜风</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
-        
-          <li>
-            
-              <a href="/" class="menu">
-                首页
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/archives" class="menu">
-                归档
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/post/about" class="menu">
-                关于
-              </a>
-            
-          </li>
-        
-      </ul>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://bigthings.space">
+        <img class="avatar" src="https://bigthings.space/images/avatar.png?v=1587228477135" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://bigthings.space">
+        <h1 class="site-title">孤独夜风</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
     </div>
   </div>
-</nav>
+</div>
 
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          <article class="article">
-            <h1>INFP与ADHD不适合学习？</h1>
-            <p class="article-meta">
-              2020-04-19
-              
-                <a href="https://bigthings.space/ti0LiaBXx/" class="badge success">
-                  ADHD
-                </a>
-              
-            </p>
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">INFP与ADHD不适合学习？</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2020-04-19</span>
             
-            <div class="post-content">
-              <p>我又被骂了，是啊，之前是零零散散委婉的提醒到了现在直接骂出口。</p>
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://bigthings.space/ti0LiaBXx/">
+                    ADHD
+                    
+                  </a>
+                
+              </span>
+            
+          </div>
+          <div class="post-content">
+            <p>我又被骂了，是啊，之前是零零散散委婉的提醒到了现在直接骂出口。</p>
 <p>我是INFP，又是个ADHD。这两个组合真是令人心碎，我平时总是特立独行。</p>
 <p>我不知道为什么，我总是有自己的一套行为准则，任何事情我都有自己的一套。</p>
 <p>从小学到现在都是这样。以前没有注意到这一点，等上了高中以后才慢慢发现。对于学习，我在班里总</p>
@@ -107,115 +111,52 @@
 <p>从这个角度想我倒是好受了不少，她应该是想关心我的，她只是希望我的成绩能得到提高吧。本来这么想我就很好受了，没想到早晨直播莫名其妙的破口大骂。她开骂的第一句没说完我就静音了，后面的几分钟我又断断续续听了几秒。这倒是证实了我昨晚的想法，她的确是个好老师，她的气愤也的确不太真实。在屏幕面前我都能感觉到她的紧张，第一次直播生气的紧张。我甚至都能想象出她在屏幕那一边拿着预先准备好的“草稿”的样子。还好，我心理承受能力已经比前几年强多了，不会再因为这种事情抑郁了。</p>
 <p>那这件事情到底是谁的问题？我想不是我也不是我老师，我希望自己可以拿到好的成绩，我的老师同样这样想。谁也没有错，还是顺其自然吧。</p>
 
-            </div>
-          </article>
+          </div>
         </div>
-        <div class="paper" data-aos="fade-in">
-          
-            <div class="next-post">
-              <div class="next">
-                下一篇
-              </div>
-              <a href="https://bigthings.space/zhuan-zhu-da-bu-zong-shi-hao-yong/">
-                <h3 class="post-title">
-                  专注达不总是好用
-                </h3>
-              </a>
-            </div>
-          
-        </div>
+
         
+          <div class="next-post">
+            <a class="purple-link" href="https://bigthings.space/zhuan-zhu-da-bu-zong-shi-hao-yong/">
+              <h3 class="post-title">
+                下一篇：专注达不总是好用
+              </h3>
+            </a>
+          </div>
+          
       </div>
 
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://bigthings.space/images/avatar.png?v=1587228435475" class="no-responsive avatar">
-    <div class="text-muted">我是ADHD与INFP，我在这个博客会写些我的真实想法，如果你喜欢，可以常来看看，如果你可以翻墙的话。</div>
-    <div class="social-container">
       
-        
+
+      <div class="site-footer">
+  <div class="slogan">我是ADHD与INFP，我在这个博客会写些我的真实想法，如果你喜欢，可以常来看看，如果你可以翻墙的话。</div>
+  <div class="social-container">
+    
       
-        
+    
       
-        
+    
       
-        
+    
       
-        
+    
       
-    </div>
+    
   </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
-    </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://bigthings.space/infp-yu-adhd-bu-gua-he-xue-xi/">INFP与ADHD不适合学习？</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://bigthings.space/zhuan-zhu-da-bu-zong-shi-hao-yong/">专注达不总是好用</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://bigthings.space/nu-quan-zhu-yi-yu-tian-yuan-nu-quan-zhu-yi-you-shi-me-guan-xi/">女权主义与田园女权主义有什么关系？</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://bigthings.space/office365-China-Mainland-rubbish/">Office365在中国大陆是个半残废</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://bigthings.space/about/">关于</a>
-            </li>
-          
-        
-      </ul>
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-        <a href="https://bigthings.space/ti0LiaBXx/" class="badge secondary">
-          ADHD
-        </a>
-      
-        <a href="https://bigthings.space/ihPLXWhHXG/" class="badge secondary">
-          Microsoft
-        </a>
-      
-    </div>
-  </div>
-  <div class="paper">
-    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://bigthings.space/atom.xml" target="_blank">RSS</a>
-  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://bigthings.space/atom.xml" target="_blank">RSS</a>
 </div>
 
 
     </div>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-<script type="application/javascript">
-
-AOS.init();
+    <script type="application/javascript">
 
 hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
