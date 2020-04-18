@@ -1,235 +1,194 @@
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8"/>
-<meta name="description" content=""/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <head>
+    <meta charset="utf-8" >
+
 <title>孤独夜风</title>
-<link rel="shortcut icon" href="https://bigthings.space/favicon.ico?v=1587227941243">
-<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://bigthings.space/favicon.ico?v=1587228267717">
 <link rel="stylesheet" href="https://bigthings.space/styles/main.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-<script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/go.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-
-<!-- DEMO JS -->
-<!--<script src="media/scripts/index.js"></script>-->
 
 
 
-</head>
-<body>
-<div class="main gt-bg-theme-color-first">
-    <div class="main-content">
-        <nav class="navbar navbar-expand-lg">
-    <div class="navbar-brand">
-        <img class="user-avatar" src="/images/avatar.png" alt="头像">
-        <div class="site-name gt-c-content-color-first">
-            孤独夜风
-        </div>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="我是ADHD与INFP，我在这个博客会写些我的真实想法，如果你喜欢，可以常来看看，如果你可以翻墙的话。">
+    
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://bigthings.space">
+        <img src="https://bigthings.space/images/avatar.png?v=1587228267717" class="site-logo">
+        <h1 class="site-title">孤独夜风</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
     </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="navbar-nav mr-auto" style="text-align: center">
-            
-                <div class="nav-item">
-                    
-                        <a href="/" class="menu gt-a-link">
-                            首页
-                        </a>
-                    
-                </div>
-            
-                <div class="nav-item">
-                    
-                        <a href="/archives" class="menu gt-a-link">
-                            归档
-                        </a>
-                    
-                </div>
-            
-                <div class="nav-item">
-                    
-                        <a href="/tags" class="menu gt-a-link">
-                            标签
-                        </a>
-                    
-                </div>
-            
-                <div class="nav-item">
-                    
-                        <a href="/post/about" class="menu gt-a-link">
-                            关于
-                        </a>
-                    
-                </div>
-            
-        </div>
-    </div>
-</nav>
-
-        <div class="post-list-container">
-    <div class="post-inner">
+    <div>
+      
         
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://bigthings.space/infp-yu-adhd-bu-gua-he-xue-xi/">
-                            <span class="post-title gt-c-content-color-first">INFP与ADHD不适合学习？</span>
-                        </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        <p>我又被骂了，是啊，之前是零零散散委婉的提醒到了现在直接骂出口。</p>
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      我是ADHD与INFP，我在这个博客会写些我的真实想法，如果你喜欢，可以常来看看，如果你可以翻墙的话。
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://bigthings.space/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://bigthings.space/infp-yu-adhd-bu-gua-he-xue-xi/">
+                  <h2 class="post-title">INFP与ADHD不适合学习？</h2>
+                </a>
+                <div class="post-date">
+                  2020-04-19
+                </div>
+                <div class="post-abstract">
+                  <p>我又被骂了，是啊，之前是零零散散委婉的提醒到了现在直接骂出口。</p>
 <p>我是INFP，又是个ADHD。这两个组合真是令人心碎，我平时总是特立独行。</p>
 <p>我不知道为什么，我总是有自己的一套行为准则，任何事情我都有自己的一套。</p>
 <p>从小学到现在都是这样。以前没有注意到这一点，等上了高中以后才慢慢发现。对于学习，我在班里总</p>
 
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2020-04-19 ·
-                        </time>
-                        
-                            <a href="https://bigthings.space/ti0LiaBXx/" class="post-tag">
-                                # ADHD
-                            </a>
-                        
-                    </div>
                 </div>
-                
-            </div>
-        
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://bigthings.space/zhuan-zhu-da-bu-zong-shi-hao-yong/">
-                            <span class="post-title gt-c-content-color-first">专注达不总是好用</span>
-                        </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        <p>我吃专注达时间也真的不短了，家里吃剩下的空瓶也不少。我从前将专注达当作神药，我甚至打算永久依赖专注达。然而事实证明我想多了，我在吃专注达之前就知道专注达有依赖性，可没想到这耐药性来的这么快。</p>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://bigthings.space/zhuan-zhu-da-bu-zong-shi-hao-yong/">
+                  <h2 class="post-title">专注达不总是好用</h2>
+                </a>
+                <div class="post-date">
+                  2020-04-19
+                </div>
+                <div class="post-abstract">
+                  <p>我吃专注达时间也真的不短了，家里吃剩下的空瓶也不少。我从前将专注达当作神药，我甚至打算永久依赖专注达。然而事实证明我想多了，我在吃专注达之前就知道专注达有依赖性，可没想到这耐药性来的这么快。</p>
 <p>我现在吃的是18mg的专注达，医生让我一日一粒。在开始的第一个月里专注达的效果是非常好的，然而好景不长，慢慢的它的药效似乎开始下降。我再也找不到第一次吃它的感觉了，随着时间的推移它的效果似乎越来越差，医生建议我使用36mg的。但我不打算用，我现在认清楚了，它不是什么神药。它只能辅助我生活而已，我不可能依靠它的。我必须靠自己才行。</p>
 
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2020-04-19 ·
-                        </time>
-                        
-                    </div>
                 </div>
-                
-            </div>
-        
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://bigthings.space/nu-quan-zhu-yi-yu-tian-yuan-nu-quan-zhu-yi-you-shi-me-guan-xi/">
-                            <span class="post-title gt-c-content-color-first">女权主义与田园女权主义有什么关系？</span>
-                        </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        <p>最近突然意识到中国有两大特别的群体：女权与田园女权。</p>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://bigthings.space/nu-quan-zhu-yi-yu-tian-yuan-nu-quan-zhu-yi-you-shi-me-guan-xi/">
+                  <h2 class="post-title">女权主义与田园女权主义有什么关系？</h2>
+                </a>
+                <div class="post-date">
+                  2020-04-19
+                </div>
+                <div class="post-abstract">
+                  <p>最近突然意识到中国有两大特别的群体：女权与田园女权。</p>
 <p>这是两类十分特别的群体，她们总是各自有自己的想法。我想了一下，女权主义者们认为男女应该是平等的，女性和男性在同等条件下都应该获得相同的利益，比如同工同酬。我个人是比较认同这种观点的，毕竟从建国以来政府就打出了“妇女也能顶半边天”的口号。但我觉着这等平等应该有一个界限。</p>
 <p>男性和女性生来就不一样，至少从生理结构上就不一样。男女之间的平等应该是建立在同等付出或者同等条件的前提下，例如同样的一份工作女性应该获得与男性相同的报酬。但是，我觉得极端的男女平等是一种愚蠢的行为，男性和女性本来就是不同的，强行将两者融合是不可能的，打着男女平等的名号到处招摇撞骗是一种可耻的行为，甚至可以说是恶毒。</p>
 
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2020-04-19 ·
-                        </time>
-                        
-                    </div>
                 </div>
-                
-            </div>
-        
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://bigthings.space/office365-China-Mainland-rubbish/">
-                            <span class="post-title gt-c-content-color-first">Office365在中国大陆是个半残废</span>
-                        </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        <p>在几个月前我购买了office365，当然不是个人版，是和其他人拼单买了家庭版，一年50块还是很划算的。本来买office365是冲着1T大云盘和正版office来的，office我用的倒是真心不错，比WPS好用，感觉每一个切换的动画都经过了精心的大量，操作十分的顺滑。</p>
+              </div>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://bigthings.space/office365-China-Mainland-rubbish/">
+                  <h2 class="post-title">Office365在中国大陆是个半残废</h2>
+                </a>
+                <div class="post-date">
+                  2020-04-18
+                </div>
+                <div class="post-abstract">
+                  <p>在几个月前我购买了office365，当然不是个人版，是和其他人拼单买了家庭版，一年50块还是很划算的。本来买office365是冲着1T大云盘和正版office来的，office我用的倒是真心不错，比WPS好用，感觉每一个切换的动画都经过了精心的大量，操作十分的顺滑。</p>
 <p>但那个1T的OneDrive就坑人了，国内OneDrive的网页版本无法使用就算了，反正我也不在网页上用云盘，但那个Windows10自带的那个OneDrive客户端用起来也是相当的糟心，简直可以用垃圾来形容。这个OneDrive现在奇怪的问题是，文件上传速度相当的快，可以完美的跑满我的上行带宽，但这下载速度简直和乌龟爬一样慢，目测也就300K左右。</p>
 
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2020-04-18 ·
-                        </time>
-                        
-                            <a href="https://bigthings.space/ihPLXWhHXG/" class="post-tag">
-                                # Microsoft
-                            </a>
-                        
-                    </div>
                 </div>
-                
-            </div>
-        
-    </div>
+              </div>
+              
+            </article>
+          
+
+          <div class="pagination-container">
+  
+  
 </div>
 
-        <div class="pagination-container">
-    
-    
-</div>
-
-
-        <div class="site-footer gt-c-content-color-first">
-    <div class="slogan gt-c-content-color-first">我是ADHD与INFP，我在这个博客会写些我的真实想法，如果你喜欢，可以常来看看，如果你可以翻墙的话。</div>
-    <div class="social-container">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
+        </div>
+      </div>
     </div>
-    <div class="footer-info">
-        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-    </div>
-    <div>
-        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
-                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://bigthings.space/atom.xml" target="_blank">RSS</a></a>
-    </div>
-</div>
 
-<script>
-    hljs.initHighlightingOnLoad()
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
 </script>
 
-    </div>
-</div>
-</body>
+
+
+
+
+
+  </body>
 </html>
