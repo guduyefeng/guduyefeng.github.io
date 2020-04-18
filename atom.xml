@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://bigthings.space</id>
     <title>孤独夜风</title>
-    <updated>2020-04-18T15:45:28.439Z</updated>
+    <updated>2020-04-18T15:58:50.170Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://bigthings.space"/>
     <link rel="self" href="https://bigthings.space/atom.xml"/>
@@ -10,6 +10,20 @@
     <logo>https://bigthings.space/images/avatar.png</logo>
     <icon>https://bigthings.space/favicon.ico</icon>
     <rights>All rights reserved 2020, 孤独夜风</rights>
+    <entry>
+        <title type="html"><![CDATA[Office365在中国大陆是个半残废]]></title>
+        <id>https://bigthings.space/office365-China-Mainland-rubbish/</id>
+        <link href="https://bigthings.space/office365-China-Mainland-rubbish/">
+        </link>
+        <updated>2020-04-18T15:56:20.000Z</updated>
+        <content type="html"><![CDATA[<p>在几个月前我购买了office365，当然不是个人版，是和其他人拼单买了家庭版，一年50块还是很划算的。本来买office365是冲着1T大云盘和正版office来的，office我用的倒是真心不错，比WPS好用，感觉每一个切换的动画都经过了精心的大量，操作十分的顺滑。</p>
+<p>但那个1T的OneDrive就坑人了，国内OneDrive的网页版本无法使用就算了，反正我也不在网页上用云盘，但那个Windows10自带的那个OneDrive客户端用起来也是相当的糟心，简直可以用垃圾来形容。这个OneDrive现在奇怪的问题是，文件上传速度相当的快，可以完美的跑满我的上行带宽，但这下载速度简直和乌龟爬一样慢，目测也就300K左右。</p>
+<p>这波操作我实在无法忍受，这到底是什么原因导致上传快下载慢，这速度差的也太大了吧。有人说微软把CDN换了，上传文件的那个CDN在日本，下载文件的时候在美国。这真的是奇葩，难道是把文件传输到日本的cdn然后日本cdn又把文件传输到了美国？可这速度也真的是慢到家了，现在这年头连个翻墙的梯子都以CN2全程当卖点，之前买过一个美国的CN2可以轻松跑满我的下行带宽。这微软是穷疯了？</p>
+<p>不过仔细想想也许是有点道理，微软在国内不能独立搭建服务器，貌似要中方运营才行否则违法。这就导致了一个问题：个人版和家庭版的office365服务器都在国外，只有国内中国版的office365数据才放在大陆。据我所知薅微软免费OneDrive的人不少，N多人去申请免费的5T云盘存视频，当下载云盘用。我猜测微软这是不是文件太多了离中国近的那几个国家的数据中心没法存这么多文件才这样干的，这样整的和百度一样恶心人，看来这1T大云盘不翻墙的话只能用来存普通的文件了，还必须是那种不是特别大的那种文件，如果是30MB+以上的文件下载可真是龟速了，要想加速下载可以开一下梯子。不过对我来说这倒是够用了，反正我存的大多数文档都是在5MB以下。</p>
+<p>其实最近还发现了一个问题，OneDrive在开梯子的情况下桌面版无法登录，不仅是这样，Windows10所有的要联网的功能全部无法使用，我想这应该是特别安排吧，不过还好，Windows10那些功能我也实在是用不上，对我来说可有可无了。</p>
+<p>至于续费这个问题我觉着倒是可以继续续费一年，反正50RMB一年，光用个office也是非常划算的。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://bigthings.space/hello-gridea/</id>
